@@ -75,11 +75,6 @@ const Signin = () => {
                         </Link>
                     </div>
                 </div>
-                <div className="logo col-4">
-                    <Link to="/">
-                        <img src="./thantran.png" alt="" />
-                    </Link>
-                </div>
             </div>
         </div>
     )

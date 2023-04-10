@@ -29,8 +29,7 @@ const HeaderPage = () => {
                     </>
                 ) : (
                     <>
-                        <Link to="/signin" className="btn btn-primary ms-3">Signin</Link>
-                        <Link to="/signup" className="btn btn-primary ms-3" style={{ marginRight: "30px" }}>Signup</Link>
+
                     </>
                 )}
             </div>

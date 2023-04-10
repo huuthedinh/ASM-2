@@ -6,7 +6,6 @@ import Menu from "../layout/Menu";
 const DelTailProduct = () => {
     const [product, setProduct] = useState<Iproduct>({} as Iproduct)
     const { id } = useParams();
-    console.log("id :", id);
 
     const fetchProduct = async () => {
         if (id) {

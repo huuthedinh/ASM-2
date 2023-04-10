@@ -3,21 +3,6 @@ const DeltailCart = () => {
     return (
         <div className="Cart-deltail">
             <section className="row row-cols-4 bg-danger text-light mt-1 ms-1" style={{ width: "600px" }}>
-                <div className="">
-                    <p>Gọi mua hàng <br /> 1800 2222</p>
-                </div>
-                <div className="flex">
-                    <span className="material-symbols-outlined fs-1">pin_drop</span>
-                    <p>Cửa hàng gần bạn</p>
-                </div>
-                <div className="flex">
-                    <span className="material-symbols-outlined fs-1">local_shipping</span>
-                    <p>Tra cứu đơn hàng</p>
-                </div>
-                <div className="flex ">
-                    <span className="material-symbols-outlined fs-1">shopping_cart</span>
-                    <p>giỏ hàng</p>
-                </div>
             </section>
             <section className="row row-cols-2 text-danger fs-5 pt-5">
                 <div className="flex-back " style={{ height: "30" }}>

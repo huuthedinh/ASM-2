@@ -5,7 +5,6 @@ type Props = {
     data: Iproduct
 }
 const Product = ({ data }: Props) => {
-    console.log(" hahahah", data)
 
     return <div>
         <Link to={`product/${data._id}`}><img src="./product1.png" alt="" /></Link>

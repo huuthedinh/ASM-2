@@ -9,7 +9,7 @@ const HeaderAdmin = () => {
     const navigate = useNavigate();
     const [user, setUser] = useState<IUser>()
     useEffect(() => {
-        axios.get("http://localhost:8080/api/user")
+        axios.get("http://localhost:8080/api/signin")
             .then(({ data }) => setUser(data.users))
     }, [])
 

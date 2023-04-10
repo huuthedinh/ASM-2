@@ -37,13 +37,6 @@ const ListUpdateProduct = () => {
     }
 
     return <div className="row row-cols-2 pt-4 container col-10 border p-2 bg-body">
-        <div className="col-4">
-            <h5>Cập nhật sản phẩm</h5>
-            <img src="https://salt.tikicdn.com/ts/product/43/35/ca/4630727d5a4eee189dc3dacae0bf39d7.jpg" alt="" width={200} />
-            <hr />
-            <p>Mô tả ngắn: Chúng ta vẫn biết rằng, làm việc với một đoạn văn bản dễ đọc và rõ nghĩa dễ gây rối trí và cản trở việc tập trung vào yếu tố trình bày văn bản. </p>
-            <hr />
-        </div>
         <div className="col-8">
             <form action="" onSubmit={handleSubmit(onSubmit)}>
                 <h5>Thông tin sản phẩm</h5>

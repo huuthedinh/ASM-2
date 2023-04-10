@@ -5,7 +5,7 @@ import { IUser } from "../../interfaces/User";
 const ListUser = () => {
     const [users, setUsers] = useState<IUser[]>([]);
     useEffect(() => {
-        axios.get("http://localhost:8080/api/user")
+        axios.get("http://localhost:8080/api/signin")
             .then(({ data }) => {
                 setUsers(data);
                 console.log(data);
@@ -13,12 +13,12 @@ const ListUser = () => {
         // console.log(data);
     }, [])
     const handleDeleteUser = (id: string | number) => {
-        axios.delete(`http://localhost:8080/api/user/${id}`)
+        axios.delete(`http://localhost:8080/api/signin/${id}`)
             .then((response) => {
                 // Xóa user khỏi state
                 const confilm = window.confirm("Bạn có muốn xóa không ?")
                 if (confilm) {
-                    const newData = users.filter((user) => user._id !== id)
+                    const newData = users.filter((data) => data._id !== id)
                     setUsers(newData);
                     console.log(response.data);
                 }
@@ -48,6 +48,7 @@ const ListUser = () => {
                                 <td>{user.name}</td>
                                 <td>{user.email}</td>
                                 <td>{user.password}</td>
+                                <td>{user.role}</td>
                                 <td>
                                     <button onClick={() => handleDeleteUser(user._id)} className="btn btn-primary me-2">Xóa</button>
                                 </td>
